@@ -1,0 +1,73 @@
+public class Main {
+    public static void MainMethod(){
+        //Inicio del juego
+        System.debug('Bienvenido al juego de Escaleras y serpientes');
+        System.debug('Empezando el juego');
+        Integer player = 1;
+        Integer EscalerasCounter = 0;
+        Integer SerpientesCounter = 0;
+        Integer dado = 0;
+        while(True){
+            //Marca tu posicion
+            System.debug('Tu posicion es:'+player);
+            //Tira el dado
+            dado = Integer.valueof((Math.random() * 6));  
+            while(dado == 0){
+                // si el dado saca 0 entonces vuelve a tirar
+                dado = Integer.valueof((Math.random() * 6));  
+            }
+			
+            System.debug('El dado saco: '+dado);
+            player = player+dado;
+            //Revisa si encontraste una escalera
+            if (player == 3){
+                System.debug('Encontraste una escalera!');
+           		player = 11;
+                EscalerasCounter = EscalerasCounter+1;
+            }else if (player == 6){
+                System.debug('Encontraste una escalera!');
+           		player = 17;
+                EscalerasCounter = EscalerasCounter+1;
+            }else if (player == 9){
+                System.debug('Encontraste una escalera!');
+           		player = 18;
+                EscalerasCounter = EscalerasCounter+1;
+            }else if (player == 10){
+                System.debug('Encontraste una escalera!');
+           		player = 12;
+                EscalerasCounter = EscalerasCounter+1;
+            }
+            //Revisa si caiste en una serpiente
+            if (player == 14){
+                System.debug('Caiste en una serpiente!');
+           		player = 4;
+                SerpientesCounter = SerpientesCounter+1;
+            }else if (player == 19){
+                System.debug('Caiste en una serpiente!');
+           		player = 8;
+                SerpientesCounter = SerpientesCounter+1;
+            }else if (player == 22){
+                System.debug('Caiste en una serpiente!');
+           		player = 20;
+                SerpientesCounter = SerpientesCounter+1;
+            }else if (player == 24){
+                System.debug('Caiste en una serpiente!');
+           		player = 16;
+                SerpientesCounter = SerpientesCounter+1;
+            }
+            //Final del juego y estadisticas
+            if (player >= 25){
+                System.debug('Legaste a la casilla 25');
+                System.debug('!!!GANASTE!!!');
+                System.debug('Subiste '+EscalerasCounter+' escaleras');
+                System.debug('Caiste en '+SerpientesCounter+' serpientes');
+                Break;
+            }
+        }
+        
+        
+        System.debug('El juego acabo');
+        return;
+    }
+	
+}

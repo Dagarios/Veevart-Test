@@ -1,0 +1,17 @@
+El codigo hace 3 pasos que son los siguientes:
+
+- Unsorted Array:
+Coje una matriz de 8 elementos y los separa en 2 matrizes. primero crea una matriz 
+en la que copia los elementos de la matriz original  desde la posicion [3] hasta la [7]
+y elimina esas mismas posiciones de la matriz original.
+
+- Merge sort division:
+Repite el paso anterior per estavez divido los arrays a la mitas hasta que ya no puedan ser divisibles
+
+- Merge sort sort conbine:
+deshace el proceso anterior per estavez organizando cada elemento de menor a mayor.
+primero compara el primer valor con el segundo y colocara el el primer elemento de la primer
+matriz al numero menor y repite el proceso con los siguientes 2 elementos.
+
+despues de acabar el orden con los elementos de 2 verifica el valor mayor con valores del los siguientes 2 elementos
+creando una nueva matriz con los valores de ambas matrizes pero con sus elementos ordenadon de menor a mayor

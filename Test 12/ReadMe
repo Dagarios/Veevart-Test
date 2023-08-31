@@ -1,0 +1,16 @@
+Serpientes y escaleras
+
+Para iniciar el juego solo descargue el archico .py y ejecutelo, o puede 
+abrirlo desde un editor de codigo y ejecutarlo o depurarlo desde ahi.
+
+En el juego hay 25 casilla y las escaleras y las serpientes siempre se ubicaran en el 
+mismo lugar en cada juego, en base a la imagen se han distrivuido de la siguiente manera:
+
+Escalera: 3 -> 11,  6 -> 17, 9 -> 18, 10 -> 12
+
+Serpientes: 14 -> 4, 19 -> 8, 22 -> 20,  24 -> 16
+
+Cuando el juego se ejecuta todos los procesos de lanzamiento de dados y movimiento se hacen
+de forma automatica y no es necesaria la intervencion del usuario para que este funcione,
+al final puede verse el resultado y su recorrido ademas de un contador de escaleras y
+serpientes por la cuales pas el jugador.
